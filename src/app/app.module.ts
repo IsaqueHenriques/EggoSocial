@@ -8,6 +8,8 @@ import { UsuarioLoginComponent } from './usuario-login/usuario-login.component';
 import { UsuarioCadastroComponent } from './usuario-cadastro/usuario-cadastro.component';
 import { UsuarioTimelineComponent } from './usuario-timeline/usuario-timeline.component';
 import { UsuarioListagemComponent } from './usuario-listagem/usuario-listagem.component';
+import { ImagensComponent } from './shared/imagens/imagens.component';
+import { UsuarioServiveComponent } from './shared/usuario-servive/usuario-servive.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { UsuarioListagemComponent } from './usuario-listagem/usuario-listagem.co
     UsuarioLoginComponent,
     UsuarioCadastroComponent,
     UsuarioTimelineComponent,
-    UsuarioListagemComponent
+    UsuarioListagemComponent,
+    ImagensComponent,
+    UsuarioServiveComponent
   ],
   imports: [
     BrowserModule,
