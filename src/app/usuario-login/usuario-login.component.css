@@ -1,3 +1,20 @@
-h1 {
-    color: black;
-}
+header {
+    width: 100%;
+    text-align: left;
+    color: white;
+    background-color: black;
+    font-family: calibri;
+    border: 3px solid black;
+  }
+  
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    font-family: calibri;
+  }
+  p {
+    font-family: Benguiat;
+  }
