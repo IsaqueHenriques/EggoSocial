@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UsuarioService } from './shared/service/usuario.service';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -8,8 +10,7 @@ import { UsuarioLoginComponent } from './usuario-login/usuario-login.component';
 import { UsuarioCadastroComponent } from './usuario-cadastro/usuario-cadastro.component';
 import { UsuarioTimelineComponent } from './usuario-timeline/usuario-timeline.component';
 import { UsuarioListagemComponent } from './usuario-listagem/usuario-listagem.component';
-import { ImagensComponent } from './shared/imagens/imagens.component';
-import { UsuarioServiveComponent } from './shared/usuario-servive/usuario-servive.component';
+import { FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -18,15 +19,15 @@ import { UsuarioServiveComponent } from './shared/usuario-servive/usuario-serviv
     UsuarioLoginComponent,
     UsuarioCadastroComponent,
     UsuarioTimelineComponent,
-    UsuarioListagemComponent,
-    ImagensComponent,
-    UsuarioServiveComponent
+    UsuarioListagemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [UsuarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

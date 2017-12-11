@@ -10,13 +10,16 @@ const routes: Routes = [
     path: '', component: UsuarioLoginComponent
   },
   {
+    path: 'login', component: UsuarioLoginComponent
+  },
+  {
     path: 'cadastro', component: UsuarioCadastroComponent
   },
   {
     path: 'timeline', component: UsuarioTimelineComponent
   },
-  {
-    path: 'listagem', component: UsuarioListagemComponent
+  {  
+    path: 'timeline/listagem', component: UsuarioListagemComponent
   }
 ];
 

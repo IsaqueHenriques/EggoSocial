@@ -7,21 +7,23 @@
   <form>
     <div class="row">
       <div class="input-field col s4 offset-2">
-        <input id="email" type="email" class="validate">
+        <input id="email" type="email" class="validate" [(ngModel)]="email" name="email">
         <label for="email">Email</label>
       </div>
     </div>
     <div class="row">
       <div class="input-field col s4 offset-2">
-        <input id="senha" type="password" class="validate">
+        <input id="senha" type="password" class="validate" [(ngModel)]="senha" name="senha">
         <label for="senha">Senha</label>
       </div>
+      <p><a routerLink='cadastro'>Não possui Cadastro</a></p>
     </div>
     <div class="col s4">
-        <button class="btn waves-effect waves-light" type="submit" name="action">Entrar
+        <button class="btn waves-effect waves-light" (click)="confirmar()" routerLink='timeline' name="action">Confirmar
           <i class="material-icons right">send</i>
         </button>
-    </div>  
+    </div>
+    {{mensagem}}
   </form>  
 </main>  
 <footer>

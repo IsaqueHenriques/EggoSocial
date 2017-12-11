@@ -10,8 +10,12 @@ import { UsuarioService } from '../shared/service/usuario.service';
 export class UsuarioCadastroComponent implements OnInit {
 
   usuario: Usuario = new Usuario();
+  
+  constructor(private service: UsuarioService) { }
 
-  constructor() { }
+  cadastrar(){
+    this.service.cadastrarUsuario(this.usuario);
+  }
 
   ngOnInit() {
   }

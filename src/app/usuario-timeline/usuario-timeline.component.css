@@ -23,3 +23,14 @@ p {
     font-family: Benguiat;
     font-size: 20px;
 }
+
+.lado {
+    width: 200px;
+    position: absolute;
+}
+
+.lado_direito {
+    position: absolute;
+    width: 300px;
+    left: 80%;
+}

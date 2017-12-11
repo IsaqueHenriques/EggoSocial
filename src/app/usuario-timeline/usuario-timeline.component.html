@@ -3,70 +3,58 @@
     EGGOS SOCIAL
   </h1>
 </header>
+
+<div class="lado">
+    <button name="action" routerLink='listagem'>Listar amigos
+        <i class="material-icons right">send</i>
+      </button>
+</div>
+
 <div class="row">
   <div class="input-field col s6 offset-s3">
-    <input id="text" type="text">
+    <input id="text" type="text" [(ngModel)]="post" name="post">
     <label for="text">O que deseja publicar?</label>
+    <button (click)="postar()">Publicar</button>
   </div>
   <ul>
-    <li>
+    <div *ngIf="postagens.length > 0">
+    <li *ngFor="let post of postagens; let i = index">
       <div class="row">
         <div class="col s6 offset-s3 card">
           <div class="card black">
             <div class="card-content white-text">
-              <span class="card-title">Jane Hopper</span>
-              <p>Friends don't lie.</p>
+              <span class="card-title">{{post.nome}}</span>
+              <p>{{post.post}}</p>
             </div>
             <div class="card-action">
-              <a href="#">curtir</a>
+              <a (click)="curtir()">curtir</a>{{curtidas}}
             </div>
           </div>
         </div>
       </div>
     </li>
-    <li>
-      <div class="row">
-        <div class="col s6 offset-s3 card">
-          <div class="card black">
-            <div class="card-content white-text">
-              <span class="card-title">Mike Wheeler</span>
-              <p>El.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">curtir</a>
+    </div>
+    <div *ngIf="postagens.length == 0">
+        <div class="row">
+            <div class="col s6 offset-s3 card">
+              <p>Nenhuma postagem...</p>     
             </div>
           </div>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="row">
-        <div class="col s6 offset-s3 card">
-          <div class="card black">
-            <div class="card-content white-text">
-              <span class="card-title">Will Byers</span>
-              <p>I'm here.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">curtir</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="row">
-        <div class="col s6 offset-s3 card">
-          <div class="card black">
-            <div class="card-content white-text">
-              <span class="card-title">Mary Stuart</span>
-              <p>Long may she reign!</p>
-            </div>
-            <div class="card-action">
-              <a href="#">curtir</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li>
+    </div>
+    
   </ul>
+
+  <div class="lado_direito">
+      <li *ngFor="let usuario of sugestoes; let i = index">
+        <div class="row">
+          <div class="col s6 offset-s3 card">
+            <div class="card black">
+              <div class="card-content white-text">
+                <span class="card-title">{{usuario}}</span>
+              </div>
+              <div class="card-action">
+                  <button (click)="adicionarAmigo(i)">Adicionar</button>
+                </div>
+          </div>
+          </div>
+    </div>
