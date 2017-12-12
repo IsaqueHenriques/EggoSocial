@@ -10,7 +10,7 @@ import { Usuario } from '../shared/usuario/usuario';
 export class UsuarioTimelineComponent implements OnInit {
 
   postagens: Array<object> = [];
-  sugestoes: Array<string> = ['Hulk','Thor','Lock','America','Formiga','Spider','Teletambes','Mike','Eleven','John Snow','Aria'];
+  sugestoes: Array<string> = ['Hulk','Thor','Loki','America','Formiga','Spider','Will','Mike','Eleven','John Snow','Aria'];
   nome: string = this.service.admin.nome;
   post: string;
   user: Usuario;
