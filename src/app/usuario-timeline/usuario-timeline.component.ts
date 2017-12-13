@@ -13,19 +13,13 @@ export class UsuarioTimelineComponent implements OnInit {
   sugestoes: Array<string> = ['Hulk','Thor','Loki','America','Formiga','Spider','Will','Mike','Eleven','John Snow','Aria'];
   nome: string = this.service.admin.nome;
   post: string;
-  user: Usuario;
-
-  curtidas: number = 0;
 
   constructor(private service: UsuarioService) { }
 
   postar(){
     this.postagens.push({nome: this.nome, post: this.post});
+    console.log(this.service.admin);
     this.post = '';
-  }
-
-  curtir(){
-    this.curtidas += 1;
   }
 
   adicionarAmigo(x){

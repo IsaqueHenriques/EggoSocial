@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../shared/usuario/usuario';
 import { UsuarioService } from '../shared/service/usuario.service';
 import { RouterLink } from '@angular/router/src/directives/router_link';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-usuario-login',
@@ -11,21 +13,19 @@ import { RouterLink } from '@angular/router/src/directives/router_link';
 export class UsuarioLoginComponent implements OnInit {
 
   usuario: Usuario = new Usuario();
-  email: string = '';
-  senha: string = '';
-  mensagem: string = '';
 
-  constructor(private service: UsuarioService) { }
+  constructor(private service: UsuarioService, private _router: Router) { }
 
   confirmar(){
-    this.usuario = this.service.admin;
-    if (this.email != this.service.admin.email || this.senha != this.service.admin.senha){
-      this.mensagem = 'false, '+this.service.admin.email+' '+this.service.admin.senha}
-    else{
-      this.mensagem = 'true'}
+    
+    if (this.service.logar(this.usuario)){
+      
+      console.log(this.service.admin);
+      this._router.navigate(['/timeline']);
+    }
   
-    this.email = '';
-    this.senha = '';
+    this.usuario.email = '';
+    this.usuario.senha = '';
   }
 
   ngOnInit() {

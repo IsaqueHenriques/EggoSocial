@@ -4,12 +4,7 @@
   </h1>
 </header>
 
-<div class="lado">
-    <button name="action" routerLink='listagem'>Listar amigos
-        <i class="material-icons right">group</i>
-      </button>
-</div>
-
+<main>
 <div class="row">
   <div class="input-field col s6 offset-s2">
     <input id="text" type="text" [(ngModel)]="post" name="post">
@@ -29,7 +24,7 @@
               <p>{{post.post}}</p>
             </div>
             <div class="card-action">
-              <a (click)="curtir()">curtir</a>{{curtidas}}
+              <button ><i class="material-icons">thumb_up</i></button>
             </div>
           </div>
         </div>
@@ -45,8 +40,14 @@
     </div>
     
   </ul>
+</div>
+</main>
 
-  <div class="lado_direito">
+  <article>
+    <a name="action" routerLink='listagem'>Já amigos
+        <i class="material-icons right">group</i></a>
+    <p>Sugestões de amigos</p>
+    <ul>
       <li *ngFor="let usuario of sugestoes; let i = index">
         <div class="row">
           <div class="col s6 offset-s1 card">
@@ -59,4 +60,7 @@
                 </div>
           </div>
           </div>
-    </div>
+        </div>
+      </li>      
+    </ul>
+    </article>

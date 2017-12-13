@@ -9,6 +9,7 @@
     box-sizing: border-box;
     background: rgba(0, 0, 0, .5);
     color: white;
+    text-align: center;
 }
 .loginBox a {
     color: #fff;
@@ -23,7 +24,8 @@
     font-size: 16px;
     background: black;
     cursor: pointer;
-    border-radius: 20px;    
+    border-radius: 20px;   
+    width: 100%; 
 }
 .loginBox input[type=submit]:hover {
     background: rgba(0, 0, 0, .5);
@@ -33,4 +35,17 @@ body {
     padding: 0;
     background: url(https://media.wired.com/photos/5926d03fcefba457b079b37c/master/pass/StrangerThingsTitleCard.jpg);
     background-size: cover;
+}
+
+button {
+    background-color: rgba(0,0,0,.7);
+    color: orange;
+}
+
+body {
+    background-image: url('../imagem/EggosSocial (1).png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-size: cover;
+    height: 100%;
 }

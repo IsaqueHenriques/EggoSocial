@@ -19,3 +19,16 @@ h1 {
     font-size: 20px;
     color: white;
 }
+
+button {
+    background-color: rgba(0,0,0,0);
+    color: orange;
+}
+
+body {
+    background-image: url('../imagem/EggosSocial (1).png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-size: cover;
+    height: 100%;
+}
