@@ -1,0 +1,30 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Complexado",
+      "sobrenome": "plexo",
+      "email": "complexo@gmail.com",
+      "senha": "123",
+      "sexo": "masculino"
+    },
+    {
+      "id": 2,
+      "nome": "Isaque",
+      "sobrenome": "Henrqiues",
+      "email": "isaque@gmail.com",
+      "senha": "123456",
+      "sexo": ""
+    }
+  ],
+  "amigos": [
+    {
+      "id": "",
+      "nome": "",
+      "sobrenome": "",
+      "email": "",
+      "sexo": ""
+    }
+  ],
+  "mensagens": []
+}
