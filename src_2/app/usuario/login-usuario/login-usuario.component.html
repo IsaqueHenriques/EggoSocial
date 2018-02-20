@@ -1,0 +1,20 @@
+<body>
+  <main>
+    <div class="loginBox">
+      <form>
+        <div class="input-field">
+          <input id="email" type="email" class="validate" [(ngModel)]="usuario.email" name="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input id="senha" type="password" class="validate" [(ngModel)]="usuario.senha" name="senha">
+          <label for="senha">Senha</label>
+        </div>
+        <button (click)="logar()" name="action">Entrar</button>
+        <div>
+            <p><a routerLink='cadastro'>Cadastre-se</a></p>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>

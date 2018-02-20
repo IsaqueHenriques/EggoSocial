@@ -1,0 +1,70 @@
+<header>
+  <h1>
+    EGGOS SOCIAL
+  </h1>
+</header>
+
+
+
+<main>
+<div class="row">
+  <div class="input-field col s6 offset-s2">
+    <input id="text" type="text" [(ngModel)]="post" name="post">
+    <label for="text">O que deseja publicar?</label>
+    <button (click)="postar()">Publicar
+      <i class="material-icons right">navigate_next</i>
+    </button>
+  </div>
+  <!--<ul>
+    <div *ngIf="postagens.length > 0">
+    <li *ngFor="let post of postagens; let i = index">
+      <div class="row">
+        <div class="col s6 offset-s2 card">
+          <div class="card black">
+            <div class="card-content white-text">
+              <span class="card-title">{{post.nome}}</span>
+              <p>{{post.post}}</p>
+            </div>
+            <div class="card-action">
+              <button ><i class="material-icons">thumb_up</i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    </div>
+    <div *ngIf="postagens.length == 0">
+        <div class="row">
+            <div class="col s6 offset-s2 card">
+              <p>Nenhuma postagem...</p>     
+            </div>
+          </div>
+    </div>
+    
+  </ul>-->
+</div>
+</main>
+
+  <article>
+    <a name="action" routerLink='listagem'>Já amigos
+        <i class="material-icons right">group</i></a>
+    <p>Sugestões de amigos</p>
+    <ul>
+      <li *ngFor="let usuario of sugestoes; let i = index">
+        <div class="row">
+          <div class="col s6 offset-s1 card">
+            <div class="card black">
+              <div class="card-content white-text">
+                <span class="card-title">{{usuario}}</span>
+              </div>
+              <div class="card-action">
+                  <button (click)="adicionarAmigo(i)">Adicionar</button>
+                </div>
+          </div>
+          </div>
+        </div>
+      </li>      
+    </ul>
+    </article>
+
+    

@@ -1,0 +1,58 @@
+header {
+    width: 100%;
+    text-align: left;
+    color: white;
+    background-color: black;
+    font-family: calibri;
+    border: 3px solid black;
+}
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    font-family: calibri;
+}
+h1 {
+    text-align: center;    
+    font-family: Benguiat;
+    font-size: 20px;
+    color: white;
+}
+p {
+    font-family: Benguiat;
+    font-size: 20px;
+}
+
+.lado {
+    width: 200px;
+    position: absolute;
+}
+
+article {
+    position: absolute;
+    width: 300px;
+    left: 67%;
+    top: 80px;
+    text-align: center;
+    padding: 30px;
+}
+
+h6{
+    color: white;
+}
+
+button {
+    background-color: rgba(0,0,0,0);
+    color: orange;
+}
+
+main {
+    width: 40%;
+    margin-left: 20%;
+}
+
+.row .col.s6 {
+    width: 100%;
+}
