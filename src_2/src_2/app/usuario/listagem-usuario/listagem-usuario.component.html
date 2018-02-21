@@ -1,0 +1,27 @@
+<header>
+  <h1>
+    EGGOS SOCIAL
+  </h1>
+</header>
+
+<div class="example-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource">
+
+    <!-- Coluna Nome -->
+    <ng-container matColumnDef="nome">
+      <mat-header-cell *matHeaderCellDef>Nome</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.nome}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="acoes">
+      <mat-header-cell *matHeaderCellDef>Ações</mat-header-cell>
+      <mat-cell *matCellDef="let row; let i = index;">
+        <button (click)="removerUsuario(row, i)">Apagar</button>
+        <button>Editar</button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

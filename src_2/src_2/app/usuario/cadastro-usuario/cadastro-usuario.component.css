@@ -1,0 +1,52 @@
+header {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: calibri;
+    border: 3px solid black;
+}
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    font-family: calibri;
+}
+h1 {
+    font-family: Benguiat;
+    font-size: 20px;
+    color: white;
+}
+
+button {
+    background-color: rgba(0,0,0,0);
+    color: orange;
+}
+button:hover {
+    background-color: rgba(255,0,0,.7)
+}
+
+body {
+    background-image: url('../imagem/EggosSocial.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-size: cover;
+    height: 120%;
+}
+form{
+    color: white;
+    left: 50%;
+}
+.row{
+    margin-left: 7%;
+    margin-top: 5%;
+}
+
+.butao{
+    margin-left: 83%;
+}
+.sexo {
+    margin-left: 39%;
+}

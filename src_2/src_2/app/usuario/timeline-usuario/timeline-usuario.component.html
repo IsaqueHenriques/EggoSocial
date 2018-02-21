@@ -1,0 +1,80 @@
+<header>
+  <h1>
+    EGGOS SOCIAL
+  </h1>
+</header>
+
+<article id="direita">
+  
+  <p>Usuario Logado</p>
+  <ul id="direita">
+    <li><a name="action" routerLink='mesaRedonda'>Mesa Redonda</a></li>
+    <li><a name="action">Fotos</a></li>
+    <li><a name="action">Editar Perfil</a></li>
+    <li><a name="action" href='#'>Sair</a></li>
+</ul>
+  </article>
+
+
+<main>
+<div class="row">
+  <div class="input-field col s6 offset-s2">
+    <input id="text" type="text" [(ngModel)]="mensagem" name="post">
+    <label for="text">Publique uma mensagem</label>
+    <button (click)="postar_mensagem()" name="action">Publicar
+      <i class="material-icons right">navigate_next</i>
+    </button>
+
+
+    <ul id="time">
+      <div *ngIf="posts.length > 0">
+      <li *ngFor="let post of posts; let i = index">
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">{{admin.nome}}</span>
+          <p>{{posts[i].mensagem}}</p>
+        </div>
+        <div class="card-action">
+          <a href="#">curtir - {{posts[i].curtidas}}</a>
+          <a href="#">comentar</a>
+        </div>
+      </div>
+  </div>
+</li>
+</div>
+<div *ngIf="posts.length == 0">
+    <div class="row">
+        <div class="col s6 offset-s2 card">
+          <p>Nenhuma postagem...</p>     
+        </div>
+      </div>
+</div></ul></div>
+
+   
+</div>
+</main>
+
+  <article>
+    <a name="action" routerLink='listagem'>Já amigos
+        <i class="material-icons right">group</i></a>
+    <p>Sugestões de amigos</p>
+    <ul>
+      <li *ngFor="let usuario of sugestoes; let i = index">
+        <div class="row">
+          <div class="col s6 offset-s1 card">
+            <div class="card black">
+              <div class="card-content white-text">
+                <span class="card-title">{{usuario}}</span>
+              </div>
+              <div class="card-action">
+                  <button (click)="adicionarAmigo(i)">Adicionar</button>
+                </div>
+          </div>
+          </div>
+        </div>
+      </li>      
+    </ul>
+    </article>
+
+    
