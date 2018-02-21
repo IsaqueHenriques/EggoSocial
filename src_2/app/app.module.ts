@@ -10,10 +10,12 @@ import {
 import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
 import {UsuarioModule} from './usuario/usuario.module';
+import { MesaRedondaComponent } from './mesa-redonda/mesa-redonda.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MesaRedondaComponent
   ],
   imports: [
     BrowserModule, FormsModule,

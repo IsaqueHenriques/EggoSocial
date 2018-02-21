@@ -28,7 +28,8 @@ export class LoginUsuarioComponent implements OnInit {
         
           for(let i = 0;i < this.dataSource.length;i++){
             if(this.dataSource[i].email == this.usuario.email && this.dataSource[i].senha == this.usuario.senha ){
-                this.router.navigate(['usuario/timeline']);
+              this.usuarioService.admin = this.dataSource[i];  
+              this.router.navigate(['timeline']);
             }
           }
         

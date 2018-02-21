@@ -30,12 +30,6 @@
 .loginBox input[type=submit]:hover {
     background: rgba(0, 0, 0, .5);
 }
-body {
-    margin: o;
-    padding: 0;
-    background: url(https://media.wired.com/photos/5926d03fcefba457b079b37c/master/pass/StrangerThingsTitleCard.jpg);
-    background-size: cover;
-}
 
 button {
     background-color: rgba(0,0,0,.7);
@@ -43,10 +37,14 @@ button {
 }
 
 body {
-    background-image: url('../../imagem/EggosSocial (1).png');
+    background-image: url('../imagem/EggosSocial.png');
     background-repeat: no-repeat;
     background-size:100%;
     background-size: cover;
+    height: 100%;
+}
+
+html{
     height: 100%;
 }
 p{

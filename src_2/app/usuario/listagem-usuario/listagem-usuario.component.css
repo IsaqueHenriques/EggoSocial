@@ -1,1 +1,30 @@
 /*OI*/
+header {
+    width: 100%;
+    text-align: left;
+    color: white;
+    background-color: black;
+    font-family: calibri;
+    border: 3px solid black;
+}
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    font-family: calibri;
+}
+h1 {
+    text-align: center;    
+    font-family: Benguiat;
+    font-size: 20px;
+    color: white;
+}
+
+
+.mat-elevation-z8 {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 3%;
+}

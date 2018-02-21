@@ -1,20 +1,11 @@
-<h2>
-  <div class="div-titulo">
-    <label value="Título">Usuários</label>
-  </div>
-</h2>
-
-<button mat-mini-fab [routerLink]="'/usuario/cadastro/'"
-   matTooltip="Cadastrar usuário"
-   matTooltipPosition="below" color="primary">
-  <!--Para outros ícones, procure em: https://material.io/icons/ -->
-  <i class="material-icons">add</i>
-</button>
-<br><br>
+<header>
+  <h1>
+    EGGOS SOCIAL
+  </h1>
+</header>
 
 <div class="example-container mat-elevation-z8">
   <mat-table #table [dataSource]="dataSource">
-
 
     <!-- Coluna Nome -->
     <ng-container matColumnDef="nome">

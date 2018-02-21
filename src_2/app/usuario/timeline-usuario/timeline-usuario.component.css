@@ -39,6 +39,16 @@ article {
     padding: 30px;
 }
 
+article#direita {
+    position: absolute;
+    width: 350px;
+    left: 0%;
+    top: 80px;
+    text-align: center;
+    padding: 30px;
+}
+
+
 h6{
     color: white;
 }
@@ -46,13 +56,70 @@ h6{
 button {
     background-color: rgba(0,0,0,0);
     color: orange;
+    width: 100%;
 }
 
 main {
     width: 40%;
     margin-left: 20%;
+    align-items: center;
 }
 
 .row .col.s6 {
     width: 100%;
+}
+
+ul#direita{
+    padding: 10px;
+    display: block;
+
+}
+li:hover{
+    background-color: rgba(255,0,0,.5);
+}
+a:hover{
+    color: black;
+}
+li{
+    padding: 10px;
+    display: block;
+    height: 80px;
+    background-color: rgba(0,0,0,.8);
+    
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+ul#time li{
+    padding: 10px;
+    display: block;
+    height: 100%;
+    background-color: rgba(0,0,0,.0);
+    
+}
+
+ul#esquerda li{
+    padding: 10px;
+    display: block;
+    height: 100%;
+    background-color: rgba(0,0,0,.0);
+    
+}
+
+.row .col.m6 {
+    width: 100%;
+    padding: 15px;
+}
+
+.row .col.m7 {
+    width: 100%;
+    padding: 30px;
+}
+
+.card .card-content .card-title {
+    
+    color: black;
 }

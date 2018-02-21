@@ -4,24 +4,29 @@ import {CadastroUsuarioComponent} from './usuario/cadastro-usuario/cadastro-usua
 import {ListagemUsuarioComponent} from './usuario/listagem-usuario/listagem-usuario.component';
 import { LoginUsuarioComponent } from './usuario/login-usuario/login-usuario.component';
 import { TimelineUsuarioComponent } from './usuario/timeline-usuario/timeline-usuario.component';
+import { MesaRedondaComponent } from './mesa-redonda/mesa-redonda.component';
 const routes: Routes = [
     {
     path: '',
     component: LoginUsuarioComponent
     },{
-        path: 'usuario/login',
+        path: 'login',
         component: LoginUsuarioComponent
       },{
-        path: 'usuario/timeline',
+        path: 'timeline',
         component: TimelineUsuarioComponent
       },
       {
-        path: 'usuario/login/cadastro',
+        path: 'cadastro',
         component: CadastroUsuarioComponent
       },
       {
-        path: 'usuario/timeline/listagem',
+        path: 'timeline/listagem',
         component: ListagemUsuarioComponent
+      },
+      {
+        path: 'timeline/mesaRedonda',
+        component: MesaRedondaComponent
       },
     
 ];

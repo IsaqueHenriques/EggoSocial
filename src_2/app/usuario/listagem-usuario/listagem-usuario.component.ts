@@ -17,7 +17,7 @@ export class ListagemUsuarioComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.usuarioService.getUsuarios().subscribe(
+    this.usuarioService.getAmigos().subscribe(
       usuarios => {
         this.dataSource = new MatTableDataSource<Usuario>(usuarios);
       }
@@ -25,9 +25,9 @@ export class ListagemUsuarioComponent implements OnInit {
   }
 
   removerUsuario(usuario: Usuario, index: number) {
-    this.usuarioService.removerUsuario(usuario.id).subscribe(
+    this.usuarioService.removerAmigo(usuario.id).subscribe(
       sucesso => {
-        console.log('Removido usuário: ' + usuario.nome);
+        console.log('Removido amigo: ' + usuario.nome);
         this.dataSource.data.splice(index, 1);
         this.dataSource = new MatTableDataSource<Usuario>(this.dataSource.data);
       }, erro => {

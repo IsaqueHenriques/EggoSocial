@@ -7,6 +7,7 @@ import {ListagemUsuarioComponent} from './listagem-usuario/listagem-usuario.comp
 import {RouterModule} from '@angular/router';
 import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 import { TimelineUsuarioComponent } from './timeline-usuario/timeline-usuario.component';
+import { PostagemService} from '../shared/service/postagem.service';
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { TimelineUsuarioComponent } from './timeline-usuario/timeline-usuario.co
     RouterModule
   ],
   declarations: [CadastroUsuarioComponent, ListagemUsuarioComponent, LoginUsuarioComponent, TimelineUsuarioComponent],
-  providers: [UsuarioService]
+  providers: [UsuarioService, PostagemService]
 })
 export class UsuarioModule {
 }
